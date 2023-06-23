@@ -6,10 +6,6 @@ module.exports = (mongoose) => {
 
 });
 
- 
-
-
-
 schema.method("toJSON", function() {
 
   const { __v, _id, ...object } = this.toObject();
@@ -19,8 +15,6 @@ schema.method("toJSON", function() {
   return object;
 
 });
-
-
 
 const Categories = mongoose.model("categories", schema);
 

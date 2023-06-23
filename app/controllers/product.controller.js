@@ -46,6 +46,7 @@ exports.create = (req, res) => {
 // Retrieve all Products from the database.
 
 exports.findAll = (req, res) => {
+  
   const name = req.query.name;
 
   var condition = name

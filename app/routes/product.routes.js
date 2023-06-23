@@ -48,11 +48,6 @@ module.exports = app => {
 
   router.delete("/", products.deleteAll);
 
-
-   // Get products by keyword
-
-   router.delete("?name=", products.deleteAll);
-
  
 
   app.use('/api/products', router);

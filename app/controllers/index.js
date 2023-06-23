@@ -11,10 +11,9 @@ db.mongoose = mongoose;
 
 db.url = dbConfig.URI;
 
-db.products = require("./product.model.js")(mongoose);
+db.products = require("./product.controller.js")(mongoose);
 
-db.categories = require("./category.model.js")(mongoose);
+db.categories = require("./category.controller")(mongoose);
 
- 
 
 module.exports = db;
